@@ -1,0 +1,84 @@
+html 
+{
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+header h1 
+{
+  font: weight 500px;
+}
+
+header 
+{
+  display: flex; /*to set the content side by side rather than up and down */
+  justify-content: space-between; /*Both are shifted to the end (right most) */
+  margin: 0.3rem;
+}
+
+li 
+{
+  list-style: none; /*to avoid bullet points that are present in ordered list by default */
+  font-size: 1.5rem; /*rem is a unit in CSS ,,,font size of the root element  ,,,1 rem = 16px 
+                        we use rem as it is responsive ,,that means it adapts to differnet screens for example mobile screen and desktop screen*/
+}
+
+ul /*will stick together as NAV  does not have extra width t,,this just puts them side by side */ {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+nav /*now we will assign width */ 
+{
+  position: relative; /* positioning is done as to move the nav part ,,,just like padding ,,,but in a much more effective way */
+  top: 1rem;
+  width: 22rem;
+}
+
+.showcase_img 
+{
+  width: 95vw;
+  /* sets the 95 percent of the screen size as the image,,that is it is custom ,,,,
+    if screen size is 100 than it is 95 of that if the browser is 10 than it is 9.5 
+    it is adjustable to the screen size(brwoser window size,,,it would ve not happen woth px or rem this is RESPONSIVENESS*/
+  margin: 1rem;
+}
+
+article 
+{
+  display: flex;
+  justify-content: space-between;
+  margin: 1.5rem;
+}
+
+.container 
+{
+  text-align: center; /*text alligns at the cente just like MS WORDS */
+  margin-right: 2rem;
+  padding: 1rem;
+}
+
+p 
+{
+  font-size: 1.5rem;
+}
+
+footer
+{
+    background-color: black;
+    font-size: 1.5rem;
+    color: white;
+    display: flex;
+    justify-content: center;
+    height: 4rem;
+    align-items: center; /* like text align is for left and right ...align-item is for top and bottom */
+}
+
+a
+{
+  text-decoration: none;
+}
+
+a:hover
+{
+    color: darkred;
+}
